@@ -1,0 +1,13 @@
+{% extends "testapp/base.html" %}
+{% load static %}
+{% block title %}{{ faculty.name }}{% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>{{ faculty.name }}</h2>
+    <img src="{{ faculty.photo.url }}" alt="{{ faculty.name }}" style="width: 150px; height: 150px; border-radius: 50%;">
+    <p>Email: {{ faculty.email }}</p>
+    <p>Qualification: {{ faculty.Qualification }}</p>
+    <p>Subjects: {{ faculty.subjects }}</p>
+</div>
+{% endblock %}

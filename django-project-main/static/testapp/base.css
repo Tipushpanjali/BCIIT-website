@@ -1,0 +1,44 @@
+.head{
+    text-align: left;
+    color: rgba(238, 236, 236, 0.952);
+    background-color: rgba(1, 1, 150, 0.945);
+    font-size: 2rem;
+}
+
+.head2 {
+    display: flex;
+    align-items: center; 
+    gap: 1.5rem;
+    background-color: white; 
+    height: 22vh;
+    align-content: center;
+
+}
+
+.head2 img {
+    
+    height: 80%;
+    border-radius: 10px; 
+}
+
+.head2 p {
+    flex: 1; 
+    font-size: 14px;
+    text-align: center;
+
+}
+.head2 h2{
+    font-size: 4rem;
+    color: rgba(12, 12, 138, 0.945);
+}
+.nav-link{
+    font-size:2.3rem !important;
+    color: white  !important;
+}
+.active{
+    background-color: rgba(12, 12, 138, 0.945)  !important;
+}
+.navbg{
+    color: white;
+    background-color: #7A93AC;
+}

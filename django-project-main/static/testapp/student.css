@@ -1,0 +1,13 @@
+body{
+    background-image: url(bg_st.jpeg);
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+#head {
+    background-color: #000000c4;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f8ecec;
+    font-size: 5rem;
+}
