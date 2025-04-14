@@ -1,0 +1,27 @@
+.about-section {
+    background-color: #f8f9fa91;
+    
+}
+body{
+    background-image: url(bg_st.jpeg);
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+.about-section h1 {
+    font-size: 7rem;
+    color: rgba(13, 13, 14, 0.945);
+    font-weight: bolder;
+}
+
+.about-section h2 {
+    color: #212529;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+}
+
+.legal {
+    font-size: 0.85rem;
+}

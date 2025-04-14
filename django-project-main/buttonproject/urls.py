@@ -25,5 +25,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('faculty/', views.faculty_list, name='faculty'),
     path('events/', views.events_list, name='events'),
-     path('faculty/<int:pk>/', views.faculty_detail, name='faculty_detail'),
+    path('faculty/<int:pk>/', views.faculty_detail, name='faculty_detail'),
+    path('about/', views.about, name='about'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

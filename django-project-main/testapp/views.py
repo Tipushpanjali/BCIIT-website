@@ -6,6 +6,9 @@ from datetime import date
 def home(request):
     return render(request, 'testapp/home.html')
 
+def about(request):
+    return render(request, 'testapp/aboutus.html')
+
 def student(request):
     students1 = list(students.objects.all())
     return render(request, 'testapp/student.html', {'students': students1})
