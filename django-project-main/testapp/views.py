@@ -1,10 +1,11 @@
 from django.shortcuts import render, get_object_or_404
 from testapp.models import Faculty
-from testapp.models import Event, students
+from testapp.models import Event, students, OldEvent
 from datetime import date
 
 def home(request):
-    return render(request, 'testapp/home.html')
+    events = list(OldEvent.objects.all().order_by('date'))
+    return render(request, 'testapp/home.html', {'events': events})
 
 def about(request):
     return render(request, 'testapp/aboutus.html')
