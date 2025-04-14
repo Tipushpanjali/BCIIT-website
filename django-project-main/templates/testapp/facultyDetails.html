@@ -1,13 +1,37 @@
 {% extends "testapp/base.html" %}
 {% load static %}
 {% block title %}{{ faculty.name }}{% endblock title %}
-
+{% block head %}
+<style>
+    p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 14rem;
+    }
+    .pic{
+        text-align: center;
+    }
+    h{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+</style>
+{% endblock head %}
 {% block content %}
 <div class="container mt-4">
-    <h2>{{ faculty.name }}</h2>
+    <div class="pic">
+    <h2  class="h"><u>{{ faculty.name }}</u></h2>
     <img src="{{ faculty.photo.url }}" alt="{{ faculty.name }}" style="width: 150px; height: 150px; border-radius: 50%;">
+    </div>
+    <div>
     <p>Email: {{ faculty.email }}</p>
     <p>Qualification: {{ faculty.Qualification }}</p>
     <p>Subjects: {{ faculty.subjects }}</p>
+    </div>
 </div>
 {% endblock %}

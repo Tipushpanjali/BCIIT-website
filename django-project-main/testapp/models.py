@@ -8,7 +8,7 @@ class Faculty(models.Model):
     photo = models.ImageField(upload_to='faculty_photos/', null=True, blank=True)
     
 
-    def _str_(self):
+    def __str__(self):
         return self.name
    
 
@@ -20,7 +20,7 @@ class students(models.Model):
     batch = models.IntegerField()
     photo=models.ImageField(upload_to='student_photos/', null=True, blank=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.name
 
 class Event(models.Model):
@@ -30,7 +30,7 @@ class Event(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='event_images/', blank=True, null=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.title
     
 class OldEvent(models.Model):  
